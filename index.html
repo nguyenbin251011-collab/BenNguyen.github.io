@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giới thiệu cá nhân</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: slideIn 1s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      animation: fadeInUp 2s ease-in;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #4e54c8;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 2.5s ease-in;
+    }
+
+    .buttons a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Xin chào, Cha là Ben Nguyễn</h1>
+    <p>Chào mừng bạn đến với trang giới thiệu của tôi.</p>
+    <div class="buttons">
+      <a href="https://zalo.me/1234567890" target="_blank">Zalo</a>
+      <a href="https://www.facebook.com/share/16W522bvi3/" target="_blank">Facebook</a>
+    </div>
+  </div>
+</body>
+</html>
